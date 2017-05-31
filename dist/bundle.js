@@ -11108,6 +11108,7 @@ var App = function (_Component) {
           visibleTodos = _props.visibleTodos,
           visibilityFilter = _props.visibilityFilter;
 
+      console.log(this.props);
       return _react2.default.createElement(
         'div',
         null,
@@ -11158,6 +11159,7 @@ function selectTodos(todos, filter) {
 // Which props do we want to inject, given the global state?
 // Note: use https://github.com/faassen/reselect for better performance.
 function select(state) {
+  console.log(state);
   return {
     visibleTodos: selectTodos(state.todos, state.visibilityFilter),
     visibilityFilter: state.visibilityFilter
@@ -11191,6 +11193,7 @@ function visibilityFilter() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : SHOW_ALL;
   var action = arguments[1];
 
+  console.log(1);
   switch (action.type) {
     case _actions.SET_VISIBILITY_FILTER:
       return action.filter;
@@ -11203,6 +11206,7 @@ function todos() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var action = arguments[1];
 
+  console.log(2);
   switch (action.type) {
     case _actions.ADD_TODO:
       return [].concat(_toConsumableArray(state), [{
@@ -11605,45 +11609,45 @@ var rootElement = document.getElementById('root');
 //   document.getElementById('root')
 // );
 
-// // const element = (
-// //   <h1>
-// //     Hello, {formatName(user)}!
-// //   </h1>
-// // );
-// // const element = React.createElement(
-// //   'h1',
-// //   {className: 'greeting'},
-// //   'Hello, world!'
-// // );
-// // function tick() {
-// //   const element = (
-// //     <div>
-// //       <h1>Hello, world!</h1>
-// //       <h2>It is {new Date().toLocaleTimeString()}.</h2>
-// //     </div>
-// //   );
-// //   ReactDOM.render(
-// //     element,
-// //     document.getElementById('root')
-// //   );
-// // }
+// const element = (
+//   <h1>
+//     Hello, {formatName(user)}!
+//   </h1>
+// );
+// const element = React.createElement(
+//   'h1',
+//   {className: 'greeting'},
+//   'Hello, world!'
+// );
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+//   ReactDOM.render(
+//     element,
+//     document.getElementById('root')
+//   );
+// }
 
-// // setInterval(tick, 1000);
+// setInterval(tick, 1000);
 
-// // function Welcome(props) {
-// //   return <h1>Hello, {props.name}</h1>;
-// // }
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
 
-// // const element = <Welcome name="Sara" />;
-// // ReactDOM.render(
-// //   element,
-// //   document.getElementById('root')
-// // );
-// // ReactDOM.render(
-// //   element,
-// //   document.getElementById('root')
-// // );
-// // ReactDOM.render(<App />, document.getElementById('root'));
+// const element = <Welcome name="Sara" />;
+// ReactDOM.render(
+//   element,
+//   document.getElementById('root')
+// );
+// ReactDOM.render(
+//   element,
+//   document.getElementById('root')
+// );
+// ReactDOM.render(<App />, document.getElementById('root'));
 
 /***/ }),
 /* 105 */

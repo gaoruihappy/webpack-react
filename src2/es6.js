@@ -1,9 +1,0 @@
- componentDidMount() {
-    
-}
- tick() {
-  
-}
-componentWillUnmount() {
-  
-}
