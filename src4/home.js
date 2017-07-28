@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-
+import "./home.less"
 import * as action from './action';
 class Home extends Component {
     constructor (props) {
@@ -13,7 +13,7 @@ class Home extends Component {
         <div >
         <input />
       		<div onClick={addTodo}>123</div>
-          <ul>
+          <ul >
             {
               list.map((item,i)=>{
                 return (
@@ -24,6 +24,7 @@ class Home extends Component {
               })
             }
       		</ul>
+          <div className="a">color</div>
       	</div>    
       )
   }
