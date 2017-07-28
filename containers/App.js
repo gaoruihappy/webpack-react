@@ -57,7 +57,8 @@ function selectTodos(todos, filter) {
 // Which props do we want to inject, given the global state?
 // Note: use https://github.com/faassen/reselect for better performance.
 function select(state) {
-    console.log(state)
+    console.log(state.todos)
+    console.log(state.todos)
   return {
     visibleTodos: selectTodos(state.todos, state.visibilityFilter),
     visibilityFilter: state.visibilityFilter
