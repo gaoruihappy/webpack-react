@@ -4,6 +4,7 @@ module.exports = {
   entry: './src4',
   output: {
     filename: 'bundle.js',
+    publicPath:"/assets/",
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -17,10 +18,5 @@ module.exports = {
           },
           { test: /\.css$/, loader: "style-loader!css-loader" }
         ]
-  },
-  // plugins: [
-  //   // OccurenceOrderPlugin is needed for webpack 1.x only 
-  //   new webpack.optimize.OccurenceOrderPlugin(),
-  //   new webpack.HotModuleReplacementPlugin()
-  // ]
+  }
 };

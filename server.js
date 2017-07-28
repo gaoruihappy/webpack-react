@@ -16,6 +16,14 @@ app.use(express.static('dist'));
 app.get('/',function(req,res){
 	res.sendFile(__dirname + '/index.html');
 })
+app.get('/msg',function(req,res){
+	res.send({error:0,data:{
+		list:[{
+			text:1
+		}
+		]
+	}})
+})
 app.get('/dist/bundle',function(req,res){
 	res.sendFile(__dirname + './dist/bundle.js');
 })

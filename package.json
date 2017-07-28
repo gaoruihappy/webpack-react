@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "test": "webpack-dev-server --inline",
+    "start": "webpack",
+    "hot": "webpack-dev-server --hot"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +29,8 @@
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "description": ""
 }

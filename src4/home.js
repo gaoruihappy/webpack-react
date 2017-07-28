@@ -11,6 +11,7 @@ class Home extends Component {
       var list = this.props.data.list;
       return ( 
         <div >
+        <input />
       		<div onClick={addTodo}>123</div>
           <ul>
             {

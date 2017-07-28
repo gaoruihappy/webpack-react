@@ -4,7 +4,7 @@ var initState = {
       },{
         text:22
       },{
-        text:33
+        text:0
       }]
 }
 export default function(state = initState, action){
