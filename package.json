@@ -5,7 +5,8 @@
   "scripts": {
     "test": "webpack-dev-server --inline",
     "start": "webpack",
-    "hot": "webpack-dev-server --hot"
+    "hot": "webpack-dev-server --hot",
+    "node":"node servernode.js"
   },
   "author": "",
   "license": "ISC",

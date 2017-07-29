@@ -2,7 +2,7 @@ var initState = {
   list:[{
         text:11
       },{
-        text:88
+        text:99
       },{
         text:0
       }]

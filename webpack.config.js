@@ -1,6 +1,8 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+
 module.exports = {
   entry: './src4',
   output: {
@@ -40,4 +42,10 @@ module.exports = {
         }),
          new ExtractTextPlugin("styles.css"),
     ]
+    // devServer: {
+    //     // contentBase: "",  //以public为根目录提供文件
+    //     colors: true,
+    //     historyApiFallback: true,
+    //     inline: true
+    // }
 };
