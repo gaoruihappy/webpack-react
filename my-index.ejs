@@ -3,9 +3,14 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link href="<%= htmlWebpackPlugin.files.css%>" rel="stylesheet">
   </head>
   <body>
       <div id='root'>
     </div>
+<script src="<%= htmlWebpackPlugin.files.chunks.head.entry %>"></script>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+
   </body>
 </html>

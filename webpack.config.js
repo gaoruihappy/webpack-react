@@ -4,9 +4,13 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
 module.exports = {
-  entry: './src4',
+  // entry: './src4',
+  entry: {
+     head: './src4',
+     main: './src5'
+   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     // publicPath:"/assets/",
     path: path.resolve(__dirname, 'dist')
   },
@@ -38,9 +42,10 @@ module.exports = {
          new HtmlWebpackPlugin({  // Also generate a test.html 
           filename: 'index.html',
           title: 'Custom template',
-          template: 'my-index.ejs', 
+          inject: false,
+          template: 'my-index.ejs'
         }),
-         new ExtractTextPlugin("styles.css"),
+        new ExtractTextPlugin("styles.css"),
     ]
     // devServer: {
     //     // contentBase: "",  //以public为根目录提供文件
