@@ -1,5 +1,6 @@
 var path = require('path');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: './src4',
   output: {
@@ -16,7 +17,27 @@ module.exports = {
                     "presets": ['es2015', 'react',"stage-2"]
                 }
           },
-          { test: /\.less$/, loader: "style-loader!css-loader" }
+          { test: /\.less$/, loader: "style-loader!css-loader" },
+          // {
+          //   test: /\.less$/,
+          //   use: ExtractTextPlugin.extract({
+          //     fallback: "style-loader",
+          //     use: "css-loader"
+          //   })
+          // }
         ]
-  }
+  },
+  plugins: [
+        // new HtmlWebpackPlugin(), // Generates default index.html 
+        // new HtmlWebpackPlugin({  // Also generate a test.html 
+        //   filename: 'test.html',
+        //   template: 'src4/index.html'
+        // }),
+         new HtmlWebpackPlugin({  // Also generate a test.html 
+          filename: 'Custom.html',
+          title: 'Custom template',
+          template: 'my-index.ejs', 
+        }),
+         // new ExtractTextPlugin("styles.css"),
+    ]
 };

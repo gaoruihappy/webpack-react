@@ -17,6 +17,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.3",
     "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.29.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "redux-devtools": "^3.4.0",
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "babel-plugin-import": "^1.2.1",
+    "extract-text-webpack-plugin": "^2.1.2",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
