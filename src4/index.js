@@ -4,9 +4,9 @@ import { Provider } from 'react-redux'
 import configureStore from './store'
 import { render } from 'react-dom'
 const store = configureStore()
-import Home from './home.js'
-import Page1 from './1.js'
-import Page2 from './2.js'
+import Home from '../home/index'
+import Page1 from '../page1/index'
+import Page2 from '../page2/index'
 render(
   <Provider store={store}>
     <BrowserRouter>

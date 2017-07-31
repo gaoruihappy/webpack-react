@@ -1,8 +1,6 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-
 module.exports = {
   // entry: './src4',
   entry: {
@@ -11,7 +9,6 @@ module.exports = {
    },
   output: {
     filename: '[name].js',
-    // publicPath:"/assets/",
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -46,7 +43,10 @@ module.exports = {
           template: 'my-index.ejs'
         }),
         new ExtractTextPlugin("styles.css"),
-    ]
+    ],
+    resolve:{
+      constant:path.join('./src4','/aa')
+    }
     // devServer: {
     //     // contentBase: "",  //以public为根目录提供文件
     //     colors: true,

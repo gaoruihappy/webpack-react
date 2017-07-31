@@ -10,7 +10,6 @@ var initState = {
 export default function(state = initState, action){
   switch(action.type){
     case 'addTodo':
-    debugger
       return {
         ...state,
         list:[...state.list,{
