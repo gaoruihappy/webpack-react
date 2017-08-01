@@ -45,7 +45,9 @@ module.exports = {
         new ExtractTextPlugin("styles.css"),
     ],
     resolve:{
-      constant:path.join('./src4','/aa')
+      alias:{
+        aa:'../src4/aa'
+      }
     }
     // devServer: {
     //     // contentBase: "",  //以public为根目录提供文件

@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import aa from 'aa/index'
-
+import {BrowserRouter ,Router,Route,Link} from 'react-router-dom'
 export default class extends Component {
     constructor (props) {
         super(props);
@@ -9,7 +8,10 @@ export default class extends Component {
         }
     }
     render() {
-      return ( <span >22</span>    
+      return ( 
+        <div className="aa">aa.index
+   
+        </div>
       )
   }
 }
