@@ -1,4 +1,4 @@
-import fetch from "../constant/util.js"
+import fetch from "../../../constant/util.js"
 export var addTodo = () => (dispatch, getState) => {
 	fetch('http://127.0.0.1:3000/msg',{method:"get"}).then(
 		result=>{

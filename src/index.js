@@ -4,20 +4,21 @@ import { Provider } from 'react-redux'
 import configureStore from './store'
 import { render } from 'react-dom'
 const store = configureStore()
-import Home from '../home/index'
-import Page1 from '../page1/index'
-import Page2 from '../page2/index'
+import Home from 'containers/home/index'
+import Page1 from 'containers/page1/index'
+import Page2 from 'containers/page2/index'
+import Moren from 'containers/moren/index'
 render(
   <Provider store={store}>
     <BrowserRouter>
       <div>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/page1">Page1</Link></li>
-          <li><Link to="/page2">Page2</Link></li>
+          <li><Link to="/home">Hoeeme</Link></li>
+          <li><Link to="/page1">eeeee</Link></li>
+          <li><Link to="/page2">33sdddeees3</Link></li>
         </ul>
           <Switch>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/home" component={Home}/>
             <Route path="/page1" component={Page1}/>
             <Route path="/page2" component={Page2}/>
           </Switch>
@@ -26,4 +27,5 @@ render(
   </Provider>,
   document.getElementById('root')
 );
+
 

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import List from '../home/reducer.js';
+import List from 'containers/home/reducer.js';
 
 export default combineReducers({
   List

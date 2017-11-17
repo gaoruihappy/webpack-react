@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import {BrowserRouter ,Router,Route,Link} from 'react-router-dom'
-import "./index.less"
+import aa from '../../aa/index'
+
 export default class extends Component {
     constructor (props) {
         super(props);
@@ -9,11 +9,7 @@ export default class extends Component {
         }
     }
     render() {
-      return ( 
-        <div className="aa">qq
-   
-        </div>
+      return ( <span >moren</span>    
       )
   }
 }
-
